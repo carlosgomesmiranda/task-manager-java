@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:taskmanager_test;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: false
+
+  jackson:
+    default-property-inclusion: non_null
+
+app:
+  jwt:
+    secret: "taskmanager-test-secret-key-with-at-least-32-bytes-1234567890"
+    expiration-ms: 3600000
+  cors:
+    allowed-origins: "*"
+
+logging:
+  level:
+    br.tasks: WARN
+    org.springframework.security: WARN
+    org.hibernate: WARN

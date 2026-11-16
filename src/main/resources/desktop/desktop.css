@@ -1,0 +1,309 @@
+/* Tema do cliente desktop TaskManager */
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #0b1120;
+}
+
+/* ---------- Login ---------- */
+
+.login-root {
+    -fx-background-color: linear-gradient(to bottom right, #0b1120, #111c33 55%, #0e2a47);
+    -fx-padding: 32;
+}
+
+.login-card {
+    -fx-background-color: #111827;
+    -fx-background-radius: 18;
+    -fx-border-color: #1f2937;
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+    -fx-padding: 38 36 30 36;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 30, 0.2, 0, 12);
+}
+
+.brand-title {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.brand-subtitle {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 13px;
+    -fx-padding: 0 0 12 0;
+}
+
+.field-label {
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Controles ---------- */
+
+.text-field,
+.password-field,
+.text-area,
+.combo-box {
+    -fx-background-color: #0f172a;
+    -fx-text-fill: #e2e8f0;
+    -fx-prompt-text-fill: #64748b;
+    -fx-background-radius: 8;
+    -fx-border-color: #334155;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 9 11 9 11;
+    -fx-highlight-fill: #2563eb;
+}
+
+.text-field:focused,
+.password-field:focused,
+.text-area:focused,
+.combo-box:focused {
+    -fx-border-color: #3b82f6;
+}
+
+.text-area .content {
+    -fx-background-color: #0f172a;
+    -fx-background-radius: 8;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #e2e8f0;
+    -fx-background-color: transparent;
+    -fx-padding: 4 6 4 6;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #0f172a;
+    -fx-border-color: #334155;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.combo-box-popup .list-cell:filled:hover,
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #1d4ed8;
+    -fx-text-fill: #ffffff;
+}
+
+.check-box {
+    -fx-text-fill: #e2e8f0;
+}
+
+.check-box .box {
+    -fx-background-color: #0f172a;
+    -fx-border-color: #475569;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #ffffff;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #2563eb;
+    -fx-border-color: #2563eb;
+}
+
+.button {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 9 16 9 16;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.primary-button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: #ffffff;
+}
+
+.primary-button:hover {
+    -fx-background-color: #3b82f6;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #1d4ed8;
+}
+
+.secondary-button {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #e2e8f0;
+    -fx-border-color: #334155;
+    -fx-border-width: 1;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #273449;
+}
+
+.danger-button {
+    -fx-background-color: #b91c1c;
+    -fx-text-fill: #ffffff;
+}
+
+.danger-button:hover {
+    -fx-background-color: #dc2626;
+}
+
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #60a5fa;
+    -fx-underline: true;
+    -fx-padding: 4 2 4 2;
+}
+
+.link-button:hover {
+    -fx-text-fill: #93c5fd;
+}
+
+/* ---------- Tarefas ---------- */
+
+.tasks-root {
+    -fx-background-color: linear-gradient(to bottom, #0b1120, #0d1628);
+    -fx-padding: 24;
+    -fx-spacing: 16;
+}
+
+.header {
+    -fx-padding: 0 0 4 0;
+}
+
+.page-title {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.page-subtitle {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 12px;
+}
+
+.user-label {
+    -fx-text-fill: #cbd5e1;
+    -fx-background-color: #111827;
+    -fx-border-color: #1f2937;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 7 14 7 14;
+}
+
+.table-card {
+    -fx-background-color: #111827;
+    -fx-background-radius: 14;
+    -fx-border-color: #1f2937;
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-padding: 18;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #0f172a;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #1e293b transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #94a3b8;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #1e293b transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #0f1a2e;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #16233a;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #1d4ed8;
+}
+
+.table-cell {
+    -fx-text-fill: #e2e8f0;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 9 10 9 10;
+}
+
+.table-view .placeholder .label {
+    -fx-text-fill: #64748b;
+}
+
+.status-done {
+    -fx-text-fill: #4ade80;
+    -fx-font-weight: bold;
+}
+
+.status-pending {
+    -fx-text-fill: #fbbf24;
+    -fx-font-weight: bold;
+}
+
+.footer {
+    -fx-padding: 4 0 0 0;
+}
+
+.status-label {
+    -fx-text-fill: #94a3b8;
+}
+
+.hint-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 11px;
+}
+
+.error-label {
+    -fx-text-fill: #f87171;
+}
+
+.success-label {
+    -fx-text-fill: #4ade80;
+}
+
+/* ---------- Diálogos ---------- */
+
+.app-dialog {
+    -fx-background-color: #111827;
+}
+
+.app-dialog .header-panel {
+    -fx-background-color: #0f172a;
+}
+
+.app-dialog .header-panel .label {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 15px;
+}
+
+.app-dialog .content.label,
+.app-dialog .label {
+    -fx-text-fill: #e2e8f0;
+}
+
+.app-dialog .button-bar {
+    -fx-padding: 12 0 0 0;
+}
