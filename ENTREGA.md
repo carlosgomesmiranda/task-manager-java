@@ -1,5 +1,7 @@
 # TaskManager — Guia de Teste para o Professor
 
+**Repositório:** <https://github.com/carlosgomesmiranda/task-manager-java>
+
 Pacote de entrega do **TaskManager**, com API REST em Spring Boot 3, segurança JWT,
 persistência em MySQL e cliente desktop JavaFX.
 

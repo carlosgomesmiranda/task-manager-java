@@ -1,5 +1,7 @@
 # TaskManager 📝
 
+**Repositório:** <https://github.com/carlosgomesmiranda/task-manager-java>
+
 Gerenciador de tarefas com **API REST em Spring Boot 3** e **cliente desktop em JavaFX**.
 Cada usuário se cadastra, autentica com **JWT** e gerencia apenas as próprias tarefas.
 
